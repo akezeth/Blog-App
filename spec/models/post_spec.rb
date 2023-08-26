@@ -38,7 +38,6 @@ RSpec.describe Post, type: :model do
     post = Post.create(author: user, title: 'Hello World')
     expect(user.valid?).to eq true
 
-    comment1 = Comment.create(author: user, post:, text: 'this is a comment')
     comment2 = Comment.create(author: user, post:, text: 'this is a comment')
     comment3 = Comment.create(author: user, post:, text: 'this is a comment')
     comment4 = Comment.create(author: user, post:, text: 'this is a comment')
